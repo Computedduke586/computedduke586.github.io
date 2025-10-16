@@ -1,5 +1,5 @@
-const xSize = 1475;
-const ySize = 689;
+const xSize = 500;
+const ySize = 600;
 const inputSize = 125;
 const backgroundColour = 220;
 let yIndex = inputSize;
@@ -178,3 +178,4 @@ function NumberingSystem(int1, int2, int3, int4, int5, int6, int7, int8){
   }
   colour = nextColour.slice();  
 }
+
