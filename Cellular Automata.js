@@ -13,6 +13,7 @@ let slider;
 let button0;
 let button1;
 let button2;
+let button3;
 let input0;
 let checkbox;
 
@@ -63,13 +64,20 @@ function setup() {
   button2 = createButton("Stop");
   button2.position(90, 85);
   button2.mousePressed(() => initiated = false);
+
+  button3 = createButton("Change Rule");
+  button3.position(375, 40);
+  button3.mousePressed(() => {
+    input0.value(Math.round(random(0, 255)));
+    initiated = false;
+  })
   
   text("Rule (0 - 255)", 200, 75);  
   input0 = createInput("0");
   input0.position(198, 40);
   input0.input(() => initiated = false);
   
-  text("Loop", 155, 90);
+  text("Loop", 150, 92);
   checkbox = createCheckbox();
   checkbox.position(135, 86);
 }
@@ -169,6 +177,4 @@ function NumberingSystem(int1, int2, int3, int4, int5, int6, int7, int8){
     }
   }
   colour = nextColour.slice();  
-
 }
-
