@@ -69,7 +69,7 @@ function setup() {
   input0.position(198, 40);
   input0.input(() => initiated = false);
   
-  text("Loop", 155, 110);
+  text("Loop", 155, 90);
   checkbox = createCheckbox();
   checkbox.position(135, 86);
 }
@@ -171,3 +171,4 @@ function NumberingSystem(int1, int2, int3, int4, int5, int6, int7, int8){
   colour = nextColour.slice();  
 
 }
+
